@@ -1,0 +1,78 @@
+
+!--------THEME----------
+#define COLOR50 #E3F2FD
+#define COLOR100 #BBDEFB
+#define COLOR200 #90CAF9
+#define COLOR300 #64B5F6
+#define COLOR400 #42A5F5
+#define COLOR500 #2196F3
+#define COLOR600 #1E88E5
+#define COLOR700 #1976D2
+#define COLOR800 #1565C0
+#define COLOR900 #0D47A1
+#define COLORA100 #82B1FF
+#define COLORA200 #448AFF
+#define COLORA400 #2979FF
+#define COLORA700 #2962FF
+
+custom.color50: #E3F2FD
+custom.color100: #BBDEFB
+custom.color200: #90CAF9
+custom.color300: #64B5F6
+custom.color400: #42A5F5
+custom.color500: #2196F3
+custom.color600: #1E88E5
+custom.color700: #1976D2
+custom.color800: #1565C0
+custom.color900: #0D47A1
+custom.colora100: #82B1FF
+custom.colora200: #448AFF
+custom.colora400: #2979FF
+custom.colora700: #2962FF
+
+
+!--------GRAY------------
+#define GRAY50 #ECEFF1
+#define GRAY100 #CFD8DC
+#define GRAY200 #B0BEC5
+#define GRAY300 #90A4AE
+#define GRAY400 #78909C
+#define GRAY500 #607D8B
+#define GRAY600 #546E7A
+#define GRAY700 #455A64
+#define GRAY800 #37474F
+#define GRAY900 #263238
+
+custom.gray50: #ECEFF1
+custom.gray100: #CFD8DC
+custom.gray200: #B0BEC5
+custom.gray300: #90A4AE
+custom.gray400: #78909C
+custom.gray500: #607D8B
+custom.gray600: #546E7A
+custom.gray700: #455A64
+custom.gray800: #37474F
+custom.gray900: #263238
+
+
+!---------------------------ROFI-------------------------------------------
+
+! State:           'bg',            'fg',     'bgalt',    'hlbg',  'hlfg'
+rofi.color-window: argb:c8212121, COLOR700, COLOR700
+rofi.color-normal: argb:2c212121, GRAY200, argb:2c1d1f21, COLOR700, GRAY50
+
+rofi.width: 35
+rofi.lines: 10
+rofi.columns: 1
+rofi.font: Segoe UI Bold 18
+rofi.bw: 3
+rofi.padding: 3
+rofi.line-padding: 3
+rofi.eh: 1.5
+!rofi.separator-style: solid
+rofi.hide-scrollbar: true
+rofi.terminal: xfce4-terminal
+
+
+!---------XFT---------
+# Xft.dpi: 100

@@ -1,0 +1,174 @@
+{
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.useSplitJSON": true,
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "newUntitledFile",
+
+  //============================== EDITOR ==============================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.fontWeight": "bold",
+  "editor.tabSize": 4,
+  "editor.fontLigatures": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.fontSize": 14,
+  "editor.suggestSelection": "first",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.fontFamily": "'Fira Code','Hack Nerd Font','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+
+  //============================== FILES ==============================
+  "files.insertFinalNewline": true,
+  "files.autoSave": "off",
+
+  //============================== TERMINAL ==============================
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "bold",
+
+  //============================== PYTHON ==============================
+  "python.showStartPage": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4
+  },
+  "jupyter.interactiveWindowMode": "perFile",
+  "python.languageServer": "Pylance",
+
+  //============================== MARKDOWN ==============================
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true
+  },
+
+  //============================== JS ==============================
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  //============================== JSON ==============================
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  //============================== HTML ==============================
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  //============================== PRETTIER ==============================
+  "prettier.tabWidth": 4,
+  "prettier.requireConfig": false,
+
+  //============================== EMMET ==============================
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  //============================== GIT ==============================
+  "git.autofetch": true,
+
+  //============================== VIM ==============================
+  "vim.leader": "\\",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<leader>", "<Enter>"],
+      "after": ["<Esc>", "o"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "c"],
+      "after": ["c", "c", "/", "*", " ", " ", "*", "/", "<Esc>", "h", "h", "i"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "after": [
+        "y",
+        "y",
+        "/",
+        "}",
+        "<Enter>",
+        "p",
+        "A",
+        "}",
+        // "<BS>",
+        "<left>",
+        "<Enter>",
+        "<Esc>",
+        "d",
+        "d",
+        "k",
+        "A",
+        "<left>",
+        "<left>"
+      ]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "after": ["i", "{", "%", " ", " ", "%", "}", "<Esc>", "h", "h", "i"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "after": [
+        "m",
+        "c",
+        "?",
+        "c",
+        "l",
+        "a",
+        "s",
+        "s",
+        "=",
+        "<Return>",
+        "y",
+        "2",
+        "f",
+        "\"",
+        "`",
+        "c",
+        "e",
+        "a",
+        " ",
+        "<Esc>",
+        "p",
+        "h"
+      ]
+    }
+  ],
+  "vim.sneak": true,
+  "vim.replaceWithRegister": true,
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-c>": false,
+    "<C-x>": false,
+    // "<C-a>": false,
+    "<C-y>": false
+  },
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorTheme": "Atom One Dark",
+  "window.zoomLevel": 2,
+}

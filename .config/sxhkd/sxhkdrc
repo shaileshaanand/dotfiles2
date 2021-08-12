@@ -1,0 +1,59 @@
+# Browser
+super + b
+	google-chrome-stable
+
+# Power Options
+super + p
+	~/.scripts/power.sh
+
+# File Manager (Nemo)
+super + m
+	nemo
+
+# Eject USB(SATA)
+super + u
+	sudo udisksctl power-off -b $(echo $(ls -l /dev/sd?)|awk '{print $10}'|rofi -dmenu)
+
+
+# Launcher
+super + d
+	rofi -show drun -show-icons 
+
+# Functional key bindings
+XF86Audio{Stop,Prev,Next,Play}
+	mpc {stop,prev,next,toggle}
+
+
+XF86Audio{Raise,Lower}Volume
+	amixer sset Master {5%+,5%-} && pkill -SIGRTMIN+10 i3blocks
+
+super + control + {Up,Down}
+	sudo xbacklight -{inc,dec} 10
+
+XF86MonBrightness{Up,Down}
+	sudo xbacklight -{inc,dec} 10
+
+XF86AudioMute
+	amixer sset Master toggle
+
+# Reload sxhkd
+super + shift + k
+	pkill -USR1 -x sxhkd
+
+Print
+	scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/screenshots/'
+
+# Finder
+super + shift + f
+	xdg-open "$(find . -not -path '*/\.*'|rofi -i -dmenu)"
+
+# VirtualBox
+super + n
+	vboxmanage startvm --type gui $(vboxmanage list vms | sed -e 's/"//g' | dmenu -i -p "VMs")
+
+# VirtualBox Headless
+super + shift + n
+	vboxmanage startvm --type headless $(vboxmanage list vms | sed -e 's/"//g' | dmenu -i -p "VMs")
+
+super + c
+	clipmenu

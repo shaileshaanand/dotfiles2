@@ -1,0 +1,128 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # Email1
+  - trigger: ":eml"
+    replace: "anaandshailu@gmail.com"
+
+  # Email1
+  - trigger: ":ceml"
+    replace: "contactshaileshaanand@gmail.com"
+
+  # Simple text replacement
+  - trigger: ":eeml"
+    replace: "meetclassmeet2015@gmail.com"
+
+  # Simple text replacement
+  - trigger: ":fname"
+    replace: "Shailesh"
+
+  # Simple text replacement
+  - trigger: ":lname"
+    replace: "Aanand"
+
+  # Simple text replacement
+  - trigger: ":name"
+    replace: "Shailesh Aanand"
+
+  # Simple text replacement
+  - trigger: ":pin"
+    replace: "828123"
+
+  # Simple text replacement
+  - trigger: ":hpin"
+    replace: "829203"
+
+  # Simple text replacement
+  - trigger: ":sclg"
+    replace: "BIT Sindri"
+
+  # Simple text replacement
+  - trigger: ":github"
+    replace: "https://github.com/shaileshaanand"
+
+  # Simple text replacement
+  - trigger: ":clg"
+    replace: "Birsa Institute of Technology, Sindri"
+
+  # Simple text replacement
+  - trigger: ":phn"
+    replace: "9162314052"
+
+  # Simple text replacement
+  - trigger: ":city"
+    replace: "Ranchi"
+
+  # Simple text replacement
+  - trigger: ":js"
+    replace: "javascript"
+
+  # Simple text replacement
+  - trigger: ":linkedin"
+    replace: "https://www.linkedin.com/in/shailesh-aanand/"
+
+  # Simple text replacement
+  - trigger: ":facebook"
+    replace: "https://www.facebook.com/shailesh.aanand"
+
+  # Simple text replacement
+  - trigger: ":github"
+    replace: "https://github.com/shaileshaanand/"
+
+  # Simple text replacement
+  - trigger: ":twitter"
+    replace: "https://twitter.com/shailesh_aanand"
+
+  # Simple text replacement
+  - trigger: ":addr1"
+    replace: "Room No. 9, Hostel No. 26"
+
+  # Simple text replacement
+  - trigger: ":addr2"
+    replace: "BIT Sindri Campus, Sindri, Dhanbad"
+
+  # Simple text replacement
+  - trigger: ":branch"
+    replace: "Electronics and Communication"
+
+  # Simple text replacement
+  - trigger: "sphnix"
+    replace: "sphinx"
+
+  # Dates
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  # Shell commands
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo Hello from your shell"
+
+
+  # Clipboard
+  - trigger: ":clip"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "xclip -out -selection clipboard"

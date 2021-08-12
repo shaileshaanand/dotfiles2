@@ -1,0 +1,38 @@
+command=echo "$(~/.config/i3blocks/$BLOCK_NAME) "
+background=#1976D2
+separator_block_width=15
+
+[bandwidth]
+interval=2
+INTERFACE=wlan0
+# INTERFACE=enp3s0
+OUTLABEL=  
+INLABEL=  
+#TREAT_UNKNOWN_AS_UP=0
+
+[cpu_usage]
+label=  
+interval=10
+
+[volume]
+interval=once
+signal=10
+label= 墳 
+
+[memory]
+interval=10
+label= ﬙ 
+
+[checkupdates]
+interval=1800
+label=  
+
+[battery]
+label=  
+interval=5
+# BAT_NUMBER=1
+
+[time]
+interval=5
+label=  
+
