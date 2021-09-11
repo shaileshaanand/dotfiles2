@@ -1,6 +1,6 @@
 # Browser
 super + b
-	google-chrome-stable
+	brave
 
 # Power Options
 super + p
@@ -57,3 +57,6 @@ super + shift + n
 
 super + c
 	clipmenu
+
+super + x
+	i3lock
